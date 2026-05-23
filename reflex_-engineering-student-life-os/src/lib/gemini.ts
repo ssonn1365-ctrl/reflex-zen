@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { AIResponse, HabitStatus } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY! });
 
 const SYSTEM_INSTRUCTION = `
 Bạn là "Reflex Coach v3.0", một sự kết hợp giữa trí tuệ phân tích của ChatGPT và phong cách nổi loạn, khắt khe, châm biếm của Grok.
